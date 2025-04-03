@@ -1,2 +1,3 @@
 streamlit
 dotenv
+streamlit-folium==0.9.0
