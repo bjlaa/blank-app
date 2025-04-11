@@ -2,7 +2,6 @@
 All Stations Map Section
 """
 
-import os
 import streamlit as st
 import seaborn as sns
 import folium
@@ -18,7 +17,6 @@ def load_station_data():
     """
     load data
     """
-    print(os.getcwd())
     df = pd.read_csv('./pages/stations_with_regions.csv')
     return df.dropna(subset=["LAT", "LON", "REGION", "DEP"])
 

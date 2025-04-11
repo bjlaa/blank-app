@@ -1,8 +1,7 @@
 """
 Frontend logic
 """
-import os
-from dotenv import load_dotenv
+
 import streamlit as st
 import requests
 
@@ -10,8 +9,6 @@ st.set_page_config(
   page_title="Demo",
   page_icon="👀",
 )
-
-load_dotenv()
 
 endpoint = "https://climate-change-image-prophet-162960274187.europe-west1.run.app" #"http://0.0.0.0:8000" #os.getenv("GCLOUD_RUN_URL") or "http://0.0.0.0:8000"
 
